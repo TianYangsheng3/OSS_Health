@@ -4,6 +4,10 @@ from datetime import datetime, date, timedelta
 from requests_html import HTMLSession
 import re
 
+'''
+原本是想采用爬虫爬取项目网页每次commit的更新的代码行数，但是爬取次数限制以及运行时间过长作罢
+'''
+
 ## connect to database
 db = pymysql.connect(host='localhost',user='ystian',passwd='123456',db='ghtorrent_restore')
 cursor = db.cursor()

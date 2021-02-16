@@ -6,7 +6,9 @@ import random
 import matplotlib
 import matplotlib.pyplot as plt 
 
-         
+'''
+采用kmeans聚类，按照评价指标对项目聚类
+'''        
 
 
 def k_means(data, k):
@@ -18,7 +20,7 @@ def k_means(data, k):
     kmeans = KMeans(n_clusters=k, init='random', random_state=0).fit(X)
     return list(kmeans.labels_), list(kmeans.cluster_centers_)
     
-
+# 画出每类类中心的各个评价指标对比的条形图
 def Draw_graph(data, x_labels, centers, cluster_num, n):
     labels = ['forks','committer','commits','commit_comment',
     'req_opened','req_closed','req_merged','other','issue','issue_comment','watchers']

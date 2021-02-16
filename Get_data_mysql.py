@@ -1,6 +1,11 @@
 import pymysql
 from datetime import datetime, date, timedelta
 
+'''
+通用函数：从数据库中取出相关数据
+'''
+
+# 得到项目从start开始的nums条项目数据['project_id','created_at']
 def Get_project(item, sql, cursor, start, nums):
     sql = sql + str(start) + ","+ str(nums)
     cursor.execute(sql)
@@ -8,6 +13,8 @@ def Get_project(item, sql, cursor, start, nums):
     print("get data "+item)
     return res_data
 
+
+# 得到项目project_id的item（例如forks）所有数据
 def Get(project_id, item, sql, cursor, date_col,last_date):
     cursor.execute(sql)
     res_data = cursor.fetchall()

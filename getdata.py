@@ -4,6 +4,11 @@ from datetime import datetime, date, timedelta
 from requests_html import HTMLSession
 import re
 
+
+'''
+忘了这个文件用来干啥的
+'''
+
 ## connect to database
 db = pymysql.connect(host='localhost', user='ystian', passwd='123456', db='ghtorrent_restore')
 cursor = db.cursor()

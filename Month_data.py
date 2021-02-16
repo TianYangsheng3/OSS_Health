@@ -7,6 +7,10 @@ from datetime import datetime, date, timedelta
 from sklearn.preprocessing import normalize
 import random
 
+'''
+得到每个项目的评价指标的月平均数据和标准差
+'''
+
 
 # 将字符串解析成date
 def parse_date(s):

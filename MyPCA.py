@@ -5,6 +5,11 @@ import random
 from sklearn.decomposition import PCA, SparsePCA
 from Month_data import Month_all
 
+'''
+采用主成分分析得到项目的健康性评分
+'''
+
+
 def pca_1(data, num_components):    # 普通的主成分分析,这里的num_components暂时用不到
     X = data[:]
     X = normalize(X = X, axis=0)

@@ -5,7 +5,11 @@ from requests_html import HTMLSession
 import re
 from Get_data_mysql import Get, Get_project
 
+'''
+从mysql数据库中提取出我们想要的每个项目每一天的数据
+'''
 
+# 从mysql数据库中提取出我们想要的每个项目每一天的数据，例如从创建到现在的每一天的forks数量
 def fun(start, nums):
 
     ## connect to database
