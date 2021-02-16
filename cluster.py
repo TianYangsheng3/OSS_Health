@@ -4,7 +4,10 @@ from datetime import datetime, date, timedelta
 from sklearn.preprocessing import normalize
 import random
 import matplotlib
-import matplotlib.pyplot as plt     
+import matplotlib.pyplot as plt 
+
+         
+
 
 def k_means(data, k):
     # 聚类
@@ -21,7 +24,7 @@ def Draw_graph(data, x_labels, centers, cluster_num, n):
     'req_opened','req_closed','req_merged','other','issue','issue_comment','watchers']
     
     x = np.arange(len(labels))  # the label locations
-    width = 0.15  # the width of the bars
+    width = 0.15 if cluster_num<5 else 0.15*5/cluster_num       # the width of the bars
 
     fig, ax = plt.subplots()
     rects = []

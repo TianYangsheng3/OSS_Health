@@ -5,7 +5,7 @@ import random
 from sklearn.decomposition import PCA, SparsePCA
 from Month_data import Month_all
 
-def pca_1(data, num_components, selects, projects_valid):    # 普通的主成分分析,这里的num_components暂时用不到
+def pca_1(data, num_components):    # 普通的主成分分析,这里的num_components暂时用不到
     X = data[:]
     X = normalize(X = X, axis=0)
     X = np.array(X)
@@ -17,12 +17,32 @@ def pca_1(data, num_components, selects, projects_valid):    # 普通的主成�
     # pca = PCA(n_components = 'mle') 
     pca = PCA() 
     pca.fit(X)
-    new_X = pca.transform(X)
-    weights = list(pca.explained_variance_ratio_)
     # print(pca.n_components_)
     print("explained_variance_ratio_: ", [round(v,4) for v in pca.explained_variance_ratio_])
-    # print(pca.explained_variance_)
-    # print(pca.components_)
+    # # print(pca.explained_variance_)
+    # # print(pca.components_)
+    return pca
+
+def compute_newx(pca, X, is_normalize = False):
+    if is_normalize == True:
+        X = normalize(X = X, axis=0)
+    X = np.array(X)
+    new_X = pca.transform(X)
+    weights = list(pca.explained_variance_ratio_)
+    score = []
+    for project in new_X:
+        tmp = 0
+        for i in range(len(weights)):
+            tmp += weights[i]*project[i]
+        score.append(tmp)
+    return score    
+
+def compute_selects(data, selects, projects_valid, pca):    # 普通的主成分分析,这里的num_components暂时用不到
+    X = data[:]
+    X = normalize(X = X, axis=0)
+    X = np.array(X)
+    new_X = pca.transform(X)
+    weights = list(pca.explained_variance_ratio_)
     for i in range(len(selects)):
         print("*************************** scores of cluster " + str(i) + " ***************************")
         for v in selects[i]:

@@ -65,9 +65,10 @@ def Month_one(filepath, i):
         # print(data)
         data_means = np.mean(data, axis=1)
         data_std = np.std(data, axis=1)
-        if data_means[0]*len(commits)<2:      # 每月的commit数不能少于两个
+        if data_means[0]*len(commits)<0:      # 每月的commit数不能少于两个
             return False, 0 , 0
         return True, data_means, data_std
+
 
                      
 # 得到root_path路径下所有文件（即项目）从创建起第i个月的数据，存在data中
@@ -101,6 +102,6 @@ if __name__ == '__main__':
     data = []
     cluster_num = 4
     month_i = 5
-    root_path = os.getcwd() + '\\data\\'
+    root_path = os.getcwd() + '/data/'
     projects_valid = Month_all(root_path, data, month_i)
     print(projects_valid)

@@ -24,14 +24,14 @@ def tmp(start, nums):
 
 
 def Obtain_data(start, end):
-    # for i in range(start,end):
-    #     start = i*100
-    #     nums = 100
-    #     fun(start, nums)
-    #     print("*************************")
-    #     print("          "+str(i) + "        ")
-    #     print("*************************")
-    tmp(start*100, (end-start)*100)
+    for i in range(start,end):
+        start = i*100
+        nums = 100
+        fun(start, nums)
+        print("*************************")
+        print("          "+str(i) + "        ")
+        print("*************************")
+    # tmp(start*100, (end-start)*100)
 
 def Process_data():
     # data = [[1, 2], [1, 4], [1, 0], [10, 2], [10, 4], [10, 0]]
@@ -52,7 +52,8 @@ def Process_data():
         print("There is no project with a lifetime of more than " + str(month_i) +" months")
 
 if __name__ == '__main__':
-    start, end = 100, 200
-    # Obtain_data(start, end)
-    Process_data()
+    start, end = 200, 220
+    Obtain_data(start, end)
+    tmp(start*100, (end-start)*100)
+    # Process_data()
     
