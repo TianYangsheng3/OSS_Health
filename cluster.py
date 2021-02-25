@@ -2,9 +2,10 @@ import numpy as np
 from sklearn.cluster import KMeans 
 from datetime import datetime, date, timedelta
 from sklearn.preprocessing import normalize
-import random
+import random,os
 import matplotlib
 import matplotlib.pyplot as plt 
+from Month_data import Month_all
 
 '''
 采用kmeans聚类，按照评价指标对项目聚类
@@ -17,14 +18,17 @@ def k_means(data, k):
     X = data[:]
     X = normalize(X = X, axis=0)
     X = np.array(X)
-    kmeans = KMeans(n_clusters=k, init='random', random_state=0).fit(X)
+    kmeans = KMeans(n_clusters=k, init='random', random_state=0, max_iter=500).fit(X)
     return list(kmeans.labels_), list(kmeans.cluster_centers_)
     
 # 画出每类类中心的各个评价指标对比的条形图
-def Draw_graph(data, x_labels, centers, cluster_num, n):
+def Draw_graph(data, x_labels, centers, cluster_num, n = 0):
+    # labels = ['forks','committer','commits','commit_comment',
+    # 'req_opened','req_closed','req_merged','other','issue','issue_comment','watchers']
     labels = ['forks','committer','commits','commit_comment',
-    'req_opened','req_closed','req_merged','other','issue','issue_comment','watchers']
-    
+    'req_opened','req_closed','req_merged','other','issue','issue_comment','watchers',
+    'forks_std','committer_std','commits_std','commit_comment_std',
+    'req_opened_std','req_closed_std','req_merged_std','other_std','issue_std','issue_comment_std','watchers_std']   
     x = np.arange(len(labels))  # the label locations
     width = 0.15 if cluster_num<5 else 0.15*5/cluster_num       # the width of the bars
 
@@ -81,3 +85,15 @@ def choose_project(data, project_label, projects_valid, cluster_num, n):
         for j in selects[i]:
             print([round(v, 4) for v in data[j]])      # 选出来的每类的标准化后的数据
     return selects
+
+
+if __name__ == '__main__':
+    data = []
+    cluster_num = 5
+    root_path = os.getcwd() + '\\data\\'
+
+    projects_valid = Month_all(root_path, data, 5)
+
+    if len(data)>1:
+        kmeans_labels, kmeans_centers = k_means(data, cluster_num)
+        Draw_graph(data, kmeans_labels, kmeans_centers, cluster_num, 0)
