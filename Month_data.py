@@ -8,6 +8,7 @@ from sklearn.preprocessing import normalize
 import random
 import pandas as pd
 from sklearn.preprocessing import normalize,MinMaxScaler,Normalizer
+import pymysql
 
 '''
 得到每个项目的评价指标的月平均数据和标准差
@@ -175,7 +176,7 @@ def Month_all(root_path, data, i):
 
 
 # 得到root_path路径下所有文件（即项目）从创建起第i个月的数据，存在data中
-def Month_all_duration(root_path, start, end):
+def Month_all_duration(root_path, start, end, have_std=False):
     project_id = []
     data = []
     projects_path = root_path + 'projects.csv'
@@ -202,8 +203,13 @@ def Month_all_duration(root_path, start, end):
             flag, means_data, std_data = Month_duration(root_path, int(file), start, end)
             if flag:
                 projects_valid.append(int(file))
-                data.append(means_data)       # 只选择均值作为特征
-                # data.append(list(means_data) + list(std_data))  # 将标准差和均值都作为特征
+                if have_std:
+                    cur_data = []
+                    for cur in range(end-start):    # 将标准差和均值都作为特征
+                        cur_data.append(list(means_data[cur]) + list(std_data[cur])) 
+                    data.append(cur_data) 
+                else:
+                    data.append(means_data)       # 只选择均值作为特征
     # print(count)
     return projects_valid, data
 
@@ -234,17 +240,52 @@ def is_valid(filepath, features, bound):
     else:
         return True
 
+def to_file(root_path, start, end):
+    projects_valid, data = Month_all_duration(root_path, start, end, have_std=True)
+    to_file_path = "file\\month.csv"
+    header_mean = ['project_id', 'name', 'month', 'forks_mean','contributor_mean','commits_mean','commit_comment_mean',
+        'req_opened_mean','req_closed_mean','req_merged_mean','req_other_mean','issue_mean','issue_comment_mean','watchers_mean']
+    header_std = ['forks_std','contributor_std','commits_std','commit_comment_std',
+        'req_opened_std','req_closed_std','req_merged_std','req_other_std','issue_std','issue_comment_std','watchers_std']
+    header = header_mean+header_std
+
+    db = pymysql.connect(host='10.201.98.82', user='ystian', passwd='123456', db='ghtorrent_restore')   
+    cursor = db.cursor()
+
+    with open(to_file_path, 'w', newline="") as f:
+        f_csv = csv.writer(f)
+        f_csv.writerow(header)
+        for i in range(len(projects_valid)):
+            p_id = projects_valid[i]
+            name = find_name(projects_valid[i], cursor)
+            for j in range(end-start):
+                month = j+start
+                cur_data = [p_id, name, month] + data[i][j]
+                f_csv.writerow(cur_data)
+    
+    db.close()
+
+
+def find_name(project_id,cursor):
+
+    sql = "select name from projects where projects.id="+str(project_id)
+    cursor.execute(sql)    
+    p_id = cursor.fetchone() 
+    return p_id
+
+
 if __name__ == '__main__':
     # data = []
     root_path = os.getcwd() + '\\data\\'
     project_id = 1486
-    projects_valid, data = Month_all_duration(root_path, 0,3)
+    # projects_valid, data = Month_all_duration(root_path, 0,3)
     # flag, data_means, data_std = Month_duration(root_path, project_id, 0, 3)
     # print(projects_valid)
-    print(type(data))
-    data_proc, scaler = process_data(data, 0 ,3)
-    print(type(data_proc))
-    print(data[0])
-    print(data_proc[0][0])
-    print(scaler[0].transform([data_proc[0][0]]))
-    print(len(data_proc))
+    # print(type(data))
+    # data_proc, scaler = process_data(data, 0 ,3)
+    # print(type(data_proc))
+    # print(data[0])
+    # print(data_proc[0][0])
+    # print(scaler[0].transform([data_proc[0][0]]))
+    # print(len(data_proc))
+    to_file(root_path, 0, 3)
