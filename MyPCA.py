@@ -49,7 +49,7 @@ def compute_newx(pca, X, is_normalize = False):
 def compute(pca, X, is_normalize = False):
 
     weights = pca.explained_variance_ratio_
-    project = np.array(X[0])
+    project = np.array(X)
     components = pca.components_
 
     # score = np.dot(np.dot(weights, components), project)
@@ -57,9 +57,13 @@ def compute(pca, X, is_normalize = False):
     tmp = indi_weights.sum()
     for i in  range(len(indi_weights)):
         indi_weights[i] = indi_weights[i]/tmp
-    score = np.dot(indi_weights, project)
+    # score = np.dot(indi_weights, project)
+    scores = []
+    for i in range(len(project)):
+        score = np.dot(indi_weights, project[i])
+        scores.append(score)
 
-    return [score]    
+    return scores   
 
 def LinearReg(X, y):
     reg = LinearRegression()
