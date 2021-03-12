@@ -192,6 +192,7 @@ def Month_all_duration(root_path, start, end, have_std=False):
             row = Row(*r)   # 使用字段名访问数据（步骤2）
             project_id.append(row.project_id)
 
+    abnormal_id = [1486]
     # 得到所有文件第i月的数据
     projects_valid = [] #有效的project id
     # count = 0
@@ -201,7 +202,7 @@ def Month_all_duration(root_path, start, end, have_std=False):
         if is_valid(filepath, 'forks', 100) and is_valid(filepath, 'commits', 100):
             # count += 1
             flag, means_data, std_data = Month_duration(root_path, int(file), start, end)
-            if flag:
+            if flag and (int(file) not in abnormal_id):
                 projects_valid.append(int(file))
                 if have_std:
                     cur_data = []
@@ -288,4 +289,4 @@ if __name__ == '__main__':
     # print(data_proc[0][0])
     # print(scaler[0].transform([data_proc[0][0]]))
     # print(len(data_proc))
-    to_file(root_path, 0, 3)
+    to_file(root_path, 0, 6)
