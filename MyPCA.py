@@ -77,6 +77,36 @@ def LinearReg(X, y):
     plt.legend()
     plt.show()
 
+
+def LinearFit(X, y):
+    reg = LinearRegression()
+    X_train = np.array(X).reshape(-1, 1)
+    y_train = np.array(y).reshape(-1, 1)
+    # X_train, X_test, y_train, y_test = train_test_split(X, y, test_size = 0.2, random_state = 0)
+    reg.fit(X=X_train, y=y_train)
+    coef = reg.coef_
+    intercept = reg.intercept_
+    # print("coef: ", reg.coef_)
+    y_pred = reg.predict(np.array(X_train))
+    # print(y_pred.shape)
+    return y_pred
+    # plt.plot(X, y_pred, label = 'fit')
+    # plt.legend()
+    # plt.show()
+
+def Coef(X, y):
+    reg = LinearRegression()
+    X_train = np.array(X).reshape(-1, 1)
+    y_train = np.array(y).reshape(-1, 1)
+    # X_train, X_test, y_train, y_test = train_test_split(X, y, test_size = 0.2, random_state = 0)
+    reg.fit(X=X_train, y=y_train)
+    coef = reg.coef_
+    intercept = reg.intercept_
+    # print("coef: ", reg.coef_)
+    # y_pred = reg.predict(np.array(X_train))
+    # print(coef.shape)
+    return coef
+
 def compute_selects(data, selects, projects_valid, pca):    # 普通的主成分分析,这里的num_components暂时用不到
     X = data[:]
     X = normalize(X = X, axis=0)
