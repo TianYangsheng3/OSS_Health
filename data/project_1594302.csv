@@ -1,0 +1,4 @@
+project_id,date,forks,committer_id,commits,commit_comment,req_opened,req_closed,req_merged,other,issue,issue_comment,watchers
+1594302,2012-07-17,1,{120356: 1},1,0,0,0,0,0,0,0,2
+1594302,2012-07-18,0,{},0,0,0,0,0,0,0,0,0
+1594302,2012-07-19,0,{120356: 1},1,0,0,0,0,0,0,0,0

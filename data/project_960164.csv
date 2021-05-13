@@ -1,0 +1,4 @@
+project_id,date,forks,committer_id,commits,commit_comment,req_opened,req_closed,req_merged,other,issue,issue_comment,watchers
+960164,2012-09-26,0,"{833411: 8, 833701: 5, 836618: 2}",15,0,0,0,0,0,0,0,0
+960164,2012-09-27,0,"{833411: 12, 833701: 13, 836618: 17, 844636: 10}",52,0,0,0,0,0,0,0,0
+960164,2012-09-28,0,{833411: 3},3,0,0,0,0,0,0,0,0

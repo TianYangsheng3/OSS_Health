@@ -1,0 +1,4 @@
+project_id,date,forks,committer_id,commits,commit_comment,req_opened,req_closed,req_merged,other,issue,issue_comment,watchers
+516048,2012-05-30,0,"{434531: 2, 595981: 1}",3,0,0,0,0,0,0,0,2
+516048,2012-05-31,0,"{434531: 8, 595981: 2}",10,0,0,0,0,0,0,0,0
+516048,2012-06-01,0,{595981: 2},2,0,0,0,0,0,0,0,0

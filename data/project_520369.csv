@@ -1,0 +1,4 @@
+project_id,date,forks,committer_id,commits,commit_comment,req_opened,req_closed,req_merged,other,issue,issue_comment,watchers
+520369,2012-08-25,0,"{356170: 11, 548348: 2, 619270: 7}",20,0,0,0,0,0,0,0,0
+520369,2012-08-26,0,"{619270: 18, 356170: 28}",46,0,0,0,0,0,0,0,0
+520369,2012-08-27,0,"{619270: 7, 356170: 4}",11,0,0,0,0,0,0,0,0

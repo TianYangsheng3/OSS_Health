@@ -1,0 +1,5 @@
+project_id,date,forks,committer_id,commits,commit_comment,req_opened,req_closed,req_merged,other,issue,issue_comment,watchers
+239209,2012-02-20,0,{447005: 1},1,0,0,0,0,0,0,0,0
+239209,2012-02-21,1,{422219: 1},1,0,2,2,2,0,4,0,0
+239209,2012-02-22,0,{422219: 2},2,0,1,1,1,0,2,0,0
+239209,2012-02-23,0,{447005: 1},1,0,0,0,0,0,0,0,0

@@ -1,0 +1,5 @@
+project_id,date,forks,committer_id,commits,commit_comment,req_opened,req_closed,req_merged,other,issue,issue_comment,watchers
+79369,2012-08-03,0,"{250193: 3, 250196: 1}",4,0,0,0,0,0,0,0,1
+79369,2012-08-04,0,{},0,0,0,0,0,0,0,0,0
+79369,2012-08-05,0,{},0,0,0,0,0,0,0,0,0
+79369,2012-08-06,0,{250193: 1},1,0,0,0,0,0,0,0,0

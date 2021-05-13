@@ -1,0 +1,5 @@
+project_id,date,forks,committer_id,commits,commit_comment,req_opened,req_closed,req_merged,other,issue,issue_comment,watchers
+326287,2012-04-16,1,"{177602: 3, 258199: 2}",5,0,2,1,1,0,3,0,0
+326287,2012-04-17,0,"{177602: 1, 258199: 4}",5,0,0,1,1,0,0,0,0
+326287,2012-04-18,0,{258199: 3},3,0,0,0,0,0,0,0,0
+326287,2012-04-19,0,{},0,0,1,1,1,0,1,0,0

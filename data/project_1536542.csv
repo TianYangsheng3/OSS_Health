@@ -1,0 +1,4 @@
+project_id,date,forks,committer_id,commits,commit_comment,req_opened,req_closed,req_merged,other,issue,issue_comment,watchers
+1536542,2012-07-15,0,"{193187: 1, 9701: 6}",7,0,0,0,0,0,0,0,1
+1536542,2012-07-16,0,{9701: 2},2,0,0,0,0,0,0,0,0
+1536542,2012-07-17,0,{9701: 1},1,0,0,0,0,0,0,0,0

@@ -1,0 +1,3 @@
+project_id,date,forks,committer_id,commits,commit_comment,req_opened,req_closed,req_merged,other,issue,issue_comment,watchers
+2243469,2012-12-21,0,{291109: 5},5,0,0,0,0,0,0,0,1
+2243469,2012-12-22,1,{},0,0,1,1,1,0,1,0,1

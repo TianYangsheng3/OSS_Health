@@ -1,0 +1,4 @@
+project_id,date,forks,committer_id,commits,commit_comment,req_opened,req_closed,req_merged,other,issue,issue_comment,watchers
+1525547,2012-11-09,0,"{560433: 1, 1071937: 5}",6,0,0,0,0,0,0,0,0
+1525547,2012-11-10,0,"{560433: 3, 1071937: 1}",4,0,0,0,0,0,0,0,0
+1525547,2012-11-11,0,{1071937: 1},1,0,0,0,0,0,0,0,0

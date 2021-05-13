@@ -1,0 +1,5 @@
+project_id,date,forks,committer_id,commits,commit_comment,req_opened,req_closed,req_merged,other,issue,issue_comment,watchers
+2283406,2013-01-21,0,{146540: 4},4,0,0,0,0,0,0,0,0
+2283406,2013-01-22,1,{},0,0,0,0,0,0,0,0,0
+2283406,2013-01-23,0,{146540: 4},4,0,0,0,0,0,0,0,0
+2283406,2013-01-24,0,{},0,0,0,0,0,0,0,0,1

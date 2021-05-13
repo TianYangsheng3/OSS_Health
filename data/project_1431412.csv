@@ -1,0 +1,5 @@
+project_id,date,forks,committer_id,commits,commit_comment,req_opened,req_closed,req_merged,other,issue,issue_comment,watchers
+1431412,2012-11-05,0,{143038: 1},1,0,0,0,0,0,0,0,0
+1431412,2012-11-06,0,"{154814: 1, 143038: 1}",2,0,0,0,0,0,0,0,0
+1431412,2012-11-07,0,{154814: 1},1,0,0,0,0,0,0,0,0
+1431412,2012-11-08,0,{154814: 1},1,0,0,0,0,0,0,0,0

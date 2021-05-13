@@ -1,0 +1,5 @@
+project_id,date,forks,committer_id,commits,commit_comment,req_opened,req_closed,req_merged,other,issue,issue_comment,watchers
+483370,2012-07-23,1,"{237607: 7, 87998: 4}",11,0,4,2,2,0,7,1,1
+483370,2012-07-24,0,{237607: 1},1,0,0,2,2,0,0,0,0
+483370,2012-07-25,0,{},0,0,0,0,0,0,0,0,0
+483370,2012-07-26,1,{237607: 2},2,0,1,1,1,0,1,0,1

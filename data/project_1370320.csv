@@ -1,0 +1,5 @@
+project_id,date,forks,committer_id,commits,commit_comment,req_opened,req_closed,req_merged,other,issue,issue_comment,watchers
+1370320,2012-11-10,0,"{663898: 1, 948726: 2}",3,0,0,0,0,0,0,0,0
+1370320,2012-11-11,0,{663898: 1},1,0,0,0,0,0,0,0,0
+1370320,2012-11-12,0,{663898: 2},2,0,0,0,0,0,0,0,0
+1370320,2012-11-13,0,{663898: 2},2,0,0,0,0,0,0,0,0

@@ -1,0 +1,4 @@
+project_id,date,forks,committer_id,commits,commit_comment,req_opened,req_closed,req_merged,other,issue,issue_comment,watchers
+1388506,2012-11-14,0,"{44969: 8, 78664: 9}",17,0,0,0,0,0,0,0,0
+1388506,2012-11-15,0,"{78664: 8, 44969: 1}",9,0,0,0,0,0,0,0,0
+1388506,2012-11-16,0,{78664: 3},3,0,0,0,0,0,0,0,0

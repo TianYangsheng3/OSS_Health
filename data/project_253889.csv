@@ -1,0 +1,4 @@
+project_id,date,forks,committer_id,commits,commit_comment,req_opened,req_closed,req_merged,other,issue,issue_comment,watchers
+253889,2012-08-15,0,{239952: 10},10,0,0,0,0,0,0,0,1
+253889,2012-08-16,0,{239952: 8},8,0,0,0,0,0,0,0,0
+253889,2012-08-17,0,"{1030679: 2, 239952: 2}",4,0,0,0,0,0,0,0,0

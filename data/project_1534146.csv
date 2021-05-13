@@ -1,0 +1,3 @@
+project_id,date,forks,committer_id,commits,commit_comment,req_opened,req_closed,req_merged,other,issue,issue_comment,watchers
+1534146,2012-07-14,0,{15507: 2},2,0,0,0,0,0,0,0,1
+1534146,2012-07-15,0,"{15507: 15, 309595: 3, 295908: 15}",33,0,0,0,0,0,0,0,0

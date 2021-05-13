@@ -1,0 +1,4 @@
+project_id,date,forks,committer_id,commits,commit_comment,req_opened,req_closed,req_merged,other,issue,issue_comment,watchers
+928361,2012-09-23,0,{210475: 2},2,0,0,0,0,0,0,0,1
+928361,2012-09-24,0,{210475: 1},1,0,0,0,0,0,0,0,0
+928361,2012-09-25,0,{210475: 1},1,0,0,0,0,0,0,0,0

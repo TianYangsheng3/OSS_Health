@@ -1,0 +1,4 @@
+project_id,date,forks,committer_id,commits,commit_comment,req_opened,req_closed,req_merged,other,issue,issue_comment,watchers
+201112,2012-08-09,0,{181187: 9},9,0,0,0,0,0,0,0,0
+201112,2012-08-10,0,"{424945: 1, 181187: 6}",7,0,0,0,0,0,0,0,0
+201112,2012-08-11,0,{424945: 7},7,0,0,0,0,0,0,0,0

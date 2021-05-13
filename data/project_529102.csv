@@ -1,0 +1,4 @@
+project_id,date,forks,committer_id,commits,commit_comment,req_opened,req_closed,req_merged,other,issue,issue_comment,watchers
+529102,2012-08-21,0,{99254: 2},2,0,0,0,0,0,0,0,0
+529102,2012-08-22,0,{},0,0,0,0,0,0,0,0,0
+529102,2012-08-23,0,{99254: 6},6,0,0,0,0,0,0,0,0

@@ -1,0 +1,4 @@
+project_id,date,forks,committer_id,commits,commit_comment,req_opened,req_closed,req_merged,other,issue,issue_comment,watchers
+685101,2012-09-04,0,{498850: 3},3,0,0,0,0,0,0,0,0
+685101,2012-09-05,0,{498850: 2},2,0,0,0,0,0,0,0,0
+685101,2012-09-06,0,{77350: 1},1,0,0,0,0,0,0,0,0

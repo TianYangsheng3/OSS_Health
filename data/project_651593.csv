@@ -1,0 +1,4 @@
+project_id,date,forks,committer_id,commits,commit_comment,req_opened,req_closed,req_merged,other,issue,issue_comment,watchers
+651593,2012-08-30,0,{290138: 1},1,0,0,0,0,0,0,0,0
+651593,2012-08-31,0,{},0,0,0,0,0,0,0,0,0
+651593,2012-09-01,0,{290138: 1},1,0,0,0,0,0,0,0,0

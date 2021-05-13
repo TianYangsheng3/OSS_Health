@@ -1,0 +1,4 @@
+project_id,date,forks,committer_id,commits,commit_comment,req_opened,req_closed,req_merged,other,issue,issue_comment,watchers
+954815,2012-09-25,0,"{830913: 1, 830917: 1}",2,0,0,0,0,0,0,0,0
+954815,2012-09-26,0,{},0,0,0,0,0,0,0,0,0
+954815,2012-09-27,0,"{830917: 1, 844432: 1}",2,0,0,0,0,0,0,0,0

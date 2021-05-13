@@ -1,0 +1,4 @@
+project_id,date,forks,committer_id,commits,commit_comment,req_opened,req_closed,req_merged,other,issue,issue_comment,watchers
+2236745,2012-07-27,0,{163843: 1},1,0,0,0,0,0,0,0,0
+2236745,2012-07-28,0,{163843: 3},3,0,0,0,0,0,0,0,0
+2236745,2012-07-29,0,{163843: 1},1,0,0,0,0,0,0,0,1

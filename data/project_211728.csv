@@ -1,0 +1,4 @@
+project_id,date,forks,committer_id,commits,commit_comment,req_opened,req_closed,req_merged,other,issue,issue_comment,watchers
+211728,2012-02-08,0,{257331: 1},1,0,0,0,0,0,0,0,0
+211728,2012-02-09,1,"{257331: 3, 144397: 2}",5,0,4,4,4,0,8,0,0
+211728,2012-02-10,0,{144397: 1},1,0,2,2,2,0,4,0,0

@@ -1,0 +1,4 @@
+project_id,date,forks,committer_id,commits,commit_comment,req_opened,req_closed,req_merged,other,issue,issue_comment,watchers
+944254,2012-09-24,0,"{782198: 4, 825785: 1}",5,0,0,0,0,0,0,0,0
+944254,2012-09-25,0,"{782198: 6, 782188: 1, 825785: 4}",11,0,0,0,0,0,0,0,0
+944254,2012-09-26,0,"{782198: 13, 825785: 4}",17,0,0,0,0,0,0,0,0

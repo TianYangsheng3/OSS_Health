@@ -1,0 +1,5 @@
+project_id,date,forks,committer_id,commits,commit_comment,req_opened,req_closed,req_merged,other,issue,issue_comment,watchers
+418822,2012-06-18,1,"{314: 1, 81416: 1}",2,0,1,1,1,0,1,2,1
+418822,2012-06-19,0,{},0,0,0,0,0,0,0,0,0
+418822,2012-06-20,0,{},0,0,0,0,0,0,0,0,0
+418822,2012-06-21,0,{81416: 1},1,0,0,0,0,0,0,0,0

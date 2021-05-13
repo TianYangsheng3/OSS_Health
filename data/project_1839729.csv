@@ -1,0 +1,5 @@
+project_id,date,forks,committer_id,commits,commit_comment,req_opened,req_closed,req_merged,other,issue,issue_comment,watchers
+1839729,2012-12-12,0,{},0,0,0,0,0,0,0,0,0
+1839729,2012-12-13,0,{1239336: 3},3,0,0,0,0,0,0,0,0
+1839729,2012-12-14,0,{},0,0,0,0,0,0,0,0,0
+1839729,2012-12-15,0,{1239336: 2},2,0,0,0,0,0,0,0,0

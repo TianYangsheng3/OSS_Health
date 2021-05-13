@@ -1,0 +1,4 @@
+project_id,date,forks,committer_id,commits,commit_comment,req_opened,req_closed,req_merged,other,issue,issue_comment,watchers
+1626824,2012-07-23,0,{509366: 2},2,0,0,0,0,0,0,0,1
+1626824,2012-07-24,0,{},0,0,0,0,0,0,0,0,0
+1626824,2012-07-25,0,"{509368: 2, 509366: 2}",4,0,0,0,0,0,0,0,0

@@ -1,0 +1,5 @@
+project_id,date,forks,committer_id,commits,commit_comment,req_opened,req_closed,req_merged,other,issue,issue_comment,watchers
+454943,2012-07-03,0,{397133: 3},3,0,0,0,0,0,0,0,0
+454943,2012-07-04,0,{397133: 1},1,0,0,0,0,0,0,0,0
+454943,2012-07-05,0,{},0,0,0,0,0,0,0,0,0
+454943,2012-07-06,1,{},0,0,1,1,0,0,1,2,0

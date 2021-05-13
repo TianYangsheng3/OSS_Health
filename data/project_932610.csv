@@ -1,0 +1,4 @@
+project_id,date,forks,committer_id,commits,commit_comment,req_opened,req_closed,req_merged,other,issue,issue_comment,watchers
+932610,2012-09-23,0,{76891: 4},4,0,0,0,0,0,0,0,0
+932610,2012-09-24,0,{349467: 2},2,0,0,0,0,0,0,0,0
+932610,2012-09-25,0,"{349467: 21, 76891: 4}",25,0,0,0,0,0,0,0,0

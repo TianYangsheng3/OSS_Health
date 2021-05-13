@@ -1,0 +1,4 @@
+project_id,date,forks,committer_id,commits,commit_comment,req_opened,req_closed,req_merged,other,issue,issue_comment,watchers
+607814,2012-08-29,0,{648189: 6},6,0,0,0,0,0,0,0,1
+607814,2012-08-30,0,{648189: 1},1,0,0,0,0,0,0,0,0
+607814,2012-08-31,0,{648189: 6},6,0,0,0,0,0,1,0,0

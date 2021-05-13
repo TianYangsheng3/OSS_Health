@@ -1,0 +1,3 @@
+project_id,date,forks,committer_id,commits,commit_comment,req_opened,req_closed,req_merged,other,issue,issue_comment,watchers
+1652696,2012-12-09,1,"{485397: 3, 1149259: 5, 485499: 5}",13,0,2,2,2,0,3,0,0
+1652696,2012-12-10,0,"{1149259: 4, 485499: 1, 485397: 1}",6,0,1,1,1,0,1,0,0

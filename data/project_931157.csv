@@ -1,0 +1,5 @@
+project_id,date,forks,committer_id,commits,commit_comment,req_opened,req_closed,req_merged,other,issue,issue_comment,watchers
+931157,2012-09-23,0,{140029: 3},3,0,0,0,0,0,0,0,0
+931157,2012-09-24,0,{140029: 1},1,0,0,0,0,0,0,0,0
+931157,2012-09-25,1,{},0,0,0,0,0,0,0,0,0
+931157,2012-09-26,1,{140029: 3},3,0,1,1,1,0,1,0,0
