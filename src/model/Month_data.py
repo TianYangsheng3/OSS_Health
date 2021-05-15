@@ -106,7 +106,7 @@ def Month_all_duration(root_path, start, end, have_std=False):
     for file in project_id:
         filepath = root_path + 'project_' + file + '.csv'
         # project_id,date,forks,committer_id,commits,commit_comment,req_opened,req_closed,req_merged,other,issue,issue_comment,watchers
-        if is_valid(filepath, 'forks', 1) and is_valid(filepath, 'commits', 1):
+        if is_valid(filepath, 'forks', 100) and is_valid(filepath, 'commits', 100):
             count += 1
             flag, means_data, std_data = Month_one_duration(root_path, int(file), start, end)
             if flag and (int(file) not in abnormal_id):
